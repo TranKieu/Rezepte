@@ -1,0 +1,459 @@
+/*resert setting */
+html, body, div, span, h1, h2, h3, h4, h5, h6, p,a, em, font, img,
+strong, ul, li {	
+	margin: 0;
+	padding: 0;
+	border: 0;
+	outline: 0;
+	vertical-align: baseline;
+	background: transparent;
+}
+
+body {
+	font-size: 62.5%;
+	font-family: goergia, helvetica, arial, sans-serif;
+	line-height: 1.5;
+	background: url(bodybg.jpg) top left;			/*../ = oki*/
+}
+
+ul {
+	list-style: none; /* không hiện dấu chấm ra*/
+}
+a {
+	text-decoration: none;
+	color: blue;
+}
+
+a:hover {
+	text-decoration: underline;
+	color: blue;
+}
+
+.clear{
+	clear: both;
+}
+
+a img {
+	border: none;
+}
+
+.img         { position:relative;display:block; }
+
+#wrapper { /*center*/
+	width: 800px;
+	margin: 20px auto;
+	border: 1px solid white;
+}
+
+strong#stern {
+	color: red;
+}
+
+select       { font:normal 11px arial,helvetica,verdana,geneva,sans-serif;color:#4F910D;border:1px solid #075005; }
+
+/*END resert setting */
+
+/* header*/
+#header {
+	width: auto;
+	height: 208px;
+	background: url(headerbg.png) repeat-x top left;
+}
+
+#header div#logo {
+	float:left;
+	text-align: center;
+	width: 166px; height: 208px;
+	background: url(logobg.jpg) repeat-x left;
+}
+
+#header div#logo ul#smallnav {
+	margin: 17px 0px 25px 0px;
+	padding: 0px 0px 9px 5px;
+	background: url(saperator.png) no-repeat bottom center;
+}
+
+#header div#logo ul#smallnav li { 
+	display: inline;	/*cho banner thành một dòng*/
+}
+
+#header div#logo ul#smallnav li a {
+	color: white;
+	font-size: 1.1em;
+	text-transform: uppercase;
+	border-right: 1px solid white;
+	padding-right: 5px;	
+}
+
+#header div#logo ul#smallnav li:last-child a{
+	border: none; /*khi các phần tử ngăn nhau bằng border thì phần tử cuối ko bị thừa ra phần ngăn cách*/
+}
+
+#header div#logo h1 {
+	color: #ff7200 ;
+	font-size: 1.8em;
+	font-family: tahoma;
+}
+
+#header div#logo p.login {
+	margin: 55px 0px 0px 0px;
+	padding: 9px 15px 0px 0px;
+	color: white;
+	font-size: 1.1em;
+	background: url(saperator.png) no-repeat top center;
+}
+
+#header div#logo p.login a {
+	color:  #ff7200 ;
+	font-weight: bold;
+}
+#header div#banner img{
+	margin-top: 4px;
+}
+
+#header div#navBar {
+	height: 33px; 
+	background: #94BB1D ;
+}
+
+#header div#navBar ul#mainNav li {
+	display: inline;
+}
+
+#header div#navBar ul#mainNav li a {
+	float: left;
+	color: white;
+	font-size: 1.2em;
+	font-weight: bold;
+	padding: .5em 10px;
+}
+
+
+/**Main setting**/
+#content{
+	background: #e6ecd9;
+	
+}
+
+#sidebar  {
+	float: left;
+	width: 166px;
+	border: 1px solid white;
+}
+
+#sidebar div#newRez {
+	border: 1px soild white;
+	overflow: hinden; /*neu ko muon no hien nhieu*/
+	background:  white url(newbg.jpg) repeat-x top left;
+}
+
+#sidebar div#newRez h1{
+	font-size: 1.5em;
+	text-transform: uppercase;
+	text-align: center;
+	margin: 5px;
+	padding: 8px;
+}
+
+#sidebar div#newRez ul {
+	padding: 0px 0px 0px 10px;
+
+}
+
+#sidebar div#newRez li  a{
+	color: #406112;
+	font-size: 1.3em;
+}
+
+#sidebar div#newRez li {
+	padding-bottom: 10px;
+}
+
+
+#sidebar div#merkRez {
+	background: url(mekrbg.jpg) repeat-x top left;
+	border: 1px solid white;
+}
+
+#sidebar div#merkRez h1{
+	color: white;
+	text-transform: uppercase;
+	font-size: 1.5em;
+	text-align: center;
+	background: url(saperator.png) no-repeat bottom center;
+	padding:  8px;
+}
+
+#sidebar div#merkRez ul {
+	padding: 0px 10px;
+}
+#sidebar div#merkRez li{
+	border-bottom: 1px dotted white;
+	padding: 10px 0px;
+}
+
+#sidebar div#merkRez li a{
+	
+	color: white;
+	font-size: 1.3em;
+}
+
+#sidebar div#merkRez li:last-child {
+	border: none;
+}
+
+#sidebar div#benuBild img{
+	margin: 4px 4px 4px 4px;
+}
+
+
+#sidebar div#manager h1{
+	color: white;
+	text-transform: uppercase;
+	font-size: 1.4em;
+	text-align: center;
+	background: url(saperator.png) no-repeat bottom center;
+	padding:  8px;
+	background: url(mekrbg.jpg) repeat-x top left;
+}
+
+#sidebar div#manager ul {
+	padding: 0px 10px;
+}
+#sidebar div#manager li a{
+	
+	color: #406112;
+	font-size: 1.3em;
+}
+
+#sidebar div#manager li{
+	
+	border-bottom: 1px solid silver;
+	padding: 10px 0px;
+}
+
+
+/**Primary**/
+#primary{
+	font-size: 1.1em;
+	float: right;
+	width: 630px;
+	
+}
+
+/**für form*/
+#primary div.link{
+	margin-top:10px
+}
+#form {
+	margin: 20px 20px 20px 20px;
+	font-size: 1.3em;
+}
+
+#primary ul#fehler {
+	padding: 10px 10px;
+	color :red;
+}
+
+#form span.zeich{
+color:#406112;
+font-size: 0.9em;
+}
+
+#form span#loes {
+	color:red;
+	font-size: 0.9em;
+}
+/**end form*/
+
+/*Rezept Anlegen*/
+
+#rezeptAnlegen {
+
+	/*background:  #e6ecd9;*/
+	width:         610px; /*thay doi cai nay cho phu hop*/
+	margin: 10px 0px 10px 10px;
+	
+}
+
+#primary h1 {
+    color: #406112;
+    font: bold 1.3em Arial,Verdana,Geneva,Helvetica,sans-serif;
+    margin: 5px 0 5px;
+}
+
+#primary h2.line {
+	color: #406112;
+	font-size: 1.2em;
+	margin:        0px 0px 10px 0px;
+	padding:       0px 0px 1px 0px;
+	border-bottom: 1px solid #C0C0C0;
+}
+
+#rezeptAnlegen span.erZeich{
+	padding: 5px 8px 0px 8px;
+}
+#rezeptAnlegen .reTable{
+	width: 625px;
+} 
+
+#rezeptAnlegen .reTable td{
+	border-right: 1px solid silver;
+	padding: 5px 8px 0px 8px;
+}
+
+#rezeptAnlegen .reTable td:last-child {
+	border: none;
+}
+
+#primary hr.line{
+	border-top:    solid silver 1px;
+	border-bottom: none;
+	height:        1px;
+}
+
+#rezeptAnlegen textarea{
+	margin-left : 10px;
+	margin-right : 10px;
+	width: 600px;
+}
+
+.comment-username { 
+	float: left; 
+}
+
+.comment-body-inner {
+		width:    609px;
+		padding:  10px;
+		border:   1px solid #bcbcbc;
+	}
+
+.comment-date {
+			float:     right;
+			color:     #666666;
+		}
+		
+/*END Rezept Anlegen*/
+
+/**footer**/
+#footer {
+	height: 40px;
+	background:#94BB1D; /*#ff7200;*/ 
+	border: 1px solid white;
+	margin-top: 10px;
+}
+#footer div#left {
+	text-align: center;
+	font-size: 1.1em;
+	float:left;
+	width: 166px;
+}
+
+/*antzeigen*/
+
+/* Listen Suche */
+.listen_suche   { 
+	position:relative;
+	width:630px;
+	background-color:white; 
+	}
+
+/*lam dong link cuoi sang len*/
+.lisu_navi .blaettern     { 
+	position:relative;
+	left:0px;
+	width:630px;
+	height:24px;
+	background-color:#D6E4A0; 
+	}
+
+/*lam link duoi ra giu*/
+.lisu_navi .blaettern .centerBox                { 
+	position:absolute;
+	width:100%;
+	top:5px;
+	text-align:center; 
+	}
+.lisu_navi .blaettern .centerBox a              {
+	position:relative;
+	background-color:#ADCA41;color:#126206;
+	padding:0px 4px;
+	margin:0px 1px;
+	}
+
+
+/*phan cach cach dong */
+.listen_suche .ergebnisliste .zeilentrenner         { 
+	position:relative;
+	background-color:white;
+	height:5px;
+	}
+.listen_suche .ergebnisliste .ueberschrift          { 
+	position:relative;
+	background-color:#ADCA41;
+	height:23px;
+	top:6px;
+	}
+/* can khung cho tung cai*/
+.listen_suche .ergebnisliste .suchelement                { 
+	position:relative ;
+	background-color:#D6E4A0;
+	border-top:1px solid #94BB1D;
+	color:black;
+	height:63px; 
+	}
+/*mau link */
+.listen_suche .ergebnisliste .suchelement a              { 
+	color:#4F910d;
+	}
+/* cho class inner de can le*/
+.listen_suche .ergebnisliste .suchelement .inner         { 
+	padding-top:6px;
+	}
+
+/*cai nay lam link tac gia xuog sat duoi*/
+.listen_suche .ergebnisliste .zutatenlink                { 
+	position:absolute;
+	top:30px;
+	left:0px;
+	}
+
+
+/*cai nay de can ban chi lai ban 3 cho cac bang khac*/
+.listen_suche .ergebnisliste .kb_rezept .tab1  a { font-weight:bold;}
+.listen_suche .ergebnisliste .kb_rezept .tab0    {	position:absolute;	left:2px; 	width:90px; height:61px; top:1px; overflow:hidden;border-right:1px solid #94BB1D;}
+.listen_suche .ergebnisliste .kb_rezept .tab1    { 	position:absolute;	left:96px;	width:234px;height:61px; top:1px; overflow:hidden; border-right:1px solid #94BB1D;}
+.listen_suche .ergebnisliste .kb_rezept .tab2    {  position:absolute;	left:334px; width:63px;	height:61px; top:1px; overflow:hidden; border-right:1px solid #94BB1D;	}
+.listen_suche .ergebnisliste .kb_rezept .tab3    {  position:absolute;	left:401px;	width:65px;	height:61px; top:1px; overflow:hidden; border-right:1px solid #94BB1D;}
+.listen_suche .ergebnisliste .kb_rezept .tab4    { 	position:absolute;	left:470px;	width:75px;	height:61px; top:1px; overflow:hidden; border-right:1px solid #94BB1D;}
+.listen_suche .ergebnisliste .kb_rezept .tab5    { 	position:absolute;	left:554px;	width:90px; height:61px; top:1px; overflow:hidden;	}
+
+#bild{
+	overflow: hidden;
+	border-bottom: 1px solid #C0C0C0 ;
+}
+#bewertet{
+	float: right;
+	width: 130 px;
+	margin-top: 5px;
+}
+
+#zutaten{
+	overflow: hidden;
+}
+ 
+.zutaten {
+	float: left;
+}
+
+
+.listen_suche  .table2 .kb_rezept  a { font-weight:bold;}
+.listen_suche  .ergebnisliste .kb_rezept.table0   {	position:absolute;	left:4px; 	width:30px; height:61px; top:1px; overflow:hidden;border-right:1px solid #94BB1D;}
+.listen_suche  .ergebnisliste .kb_rezept .table1  {  position:absolute;	left:41px;	width:90px;height:61px; top:1px; overflow:hidden; border-right:1px solid #94BB1D;}
+.listen_suche  .ergebnisliste .kb_rezept .table2  {  position:absolute;	left:138px; width:492px;	height:61px; top:1px; overflow:hidden; border-right:1px solid #94BB1D;	}
+
+.listen_suche  .tab1s .kb_rezept  a { font-weight:bold;}
+.listen_suche  .ergebnisliste .kb_rezept.tab0s   {	position:absolute;	left:20px; 	width:90px; height:61px; top:1px; overflow:hidden;border-right:1px solid #94BB1D;}
+.listen_suche  .ergebnisliste .kb_rezept .tab1s  {  position:absolute;	left:120px; width:510px; height:61px; top:1px; overflow:hidden; border-right:1px solid #94BB1D;}
+
+
